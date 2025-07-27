@@ -1,7 +1,8 @@
 export interface ButtonProps {
-  size: 'small' | 'medium' | 'large';
-  shape: 'rounded-sm' | 'rounded-md' | 'rounded-full';
-  children: React.ReactNode;
+  buttonLabel: string
+  buttonSize?: string
+  buttonBackgroundColor?: 'red' | 'blue' | 'orange' | 'green'
+  action?: () => void
 }
 export interface LayoutProps {
   children: React.ReactNode;
